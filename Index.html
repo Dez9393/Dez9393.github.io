@@ -1,1 +1,165 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Taste of Tradition | Dezmen Xavier Acosta</title>
+    <style>
+        /* ESPRESSO BISTRO THEME - Single File Solution */
+        
+        /* 1. Base Styles & Espresso Background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Espresso Charcoal Tone - Guaranteed dark background */
+            background-color: #121212 !important; 
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* 2. Header & Large Title Requirement */
+        header {
+            background-color: #b33927; /* Terracotta Red */
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem; /* Large Title Requirement */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 800;
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        /* 3. Main Container */
+        main {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        /* 4. CSS Grid Requirement (Side-by-Side Layout) */
+        .food-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Side-by-side columns */
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+            background: #1e1e1e; /* Slightly lighter espresso for sections */
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .food-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            border: 1px solid #444;
+        }
+
+        .description h2 {
+            color: #ff6b52; /* Warm accent for titles */
+            margin-top: 0;
+            font-size: 2.8rem;
+            border-bottom: 3px solid #b33927;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* 5. Custom Quote Box from food.pdf content */
+        .quote-box {
+            background: #262626;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 6px solid #b33927;
+            font-style: italic;
+            color: #ccc;
+            margin-top: 25px;
+        }
+
+        /* 6. Footer Styling */
+        footer {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: #0a0a0a;
+            font-size: 0.9rem;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+
+        /* 7. Mobile Responsive: Stacks on small screens */
+        @media (max-width: 768px) {
+            .food-grid {
+                grid-template-columns: 1fr;
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Taste of Tradition</h1>
+        <p>Dezmen Xavier Acosta's Top Tier Culinary Favorites</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Pizza Content from food.pdf -->
+        <section class="food-grid">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800" 
+                     alt="Delicious Wood-fired Pizza" 
+                     class="food-image">
+            </div>
+            <div class="description">
+                <h2>Pizza</h2>
+                <p><strong>The Verdict:</strong> Hands down, the best dish mankind has created. Because when you are at your lowest, whether it be as an adult or a child, Pizza will always have your back.</p>
+                <p><strong>The Style:</strong> This is a classic Americanized Italian dish. I love the simplicity of it—it's consistent, comforting, and always hits the spot.</p>
+                <div class="quote-box">
+                    "Pizza will always have your back."
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Lasagna Content from food.pdf -->
+        <section class="food-grid">
+            <div class="description">
+                <h2>Lasagna</h2>
+                <p><strong>The Story:</strong> This one is a little biased. Because every year for my birthday I make lasagna with my family. It's always a nice time.</p>
+                <p><strong>The Style:</strong> As you can tell, this is another Americanized Italian staple. It represents a time for family and celebration, making it taste that much better.</p>
+                <div class="quote-box">
+                    A birthday tradition in the Acosta household.
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=800" 
+                     alt="Homemade Birthday Lasagna" 
+                     class="food-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dezmen Xavier Acosta | CS 11 Website Project</p>
+        <p>Built with Semantic HTML and CSS Grid</p>
+    </footer>
+
+</body>
+</html>
